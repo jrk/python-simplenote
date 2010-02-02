@@ -85,7 +85,7 @@ class Simplenote(object):
             data = base64.b64encode(post)
             res = urllib2.Request(url=url, data=data, headers=headers)
         else:
-            req = urllib2.Request(url=url, headesr=headers)
+            req = urllib2.Request(url=url, headers=headers)
 
         try:
             res = urllib2.urlopen(req)
